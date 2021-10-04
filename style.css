@@ -1,4 +1,21 @@
 html,
 body,
 * {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+.parent {
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.child {
+  width: 28%;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.child-1 {
+  height: 500px;
 }
