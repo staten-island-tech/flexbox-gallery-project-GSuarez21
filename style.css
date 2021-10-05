@@ -3,18 +3,35 @@ body,
 * {
   box-sizing: border-box;
   font-size: 62.5%;
+  background-color: white;
+  color: black;
+}
+.Header {
+  text-align: center;
+  font-size: 100px;
+}
+.HeaderChild {
+  background-color: blue;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px;
 }
 .parent {
+  text-align: center;
   font-size: 30px;
   display: flex;
   justify-content: space-around;
   margin-left: 10%;
   margin-right: 10%;
+  margin-bottom: 5%;
 }
 .child {
+  box-shadow: 5px 5px 5px 0px #8a86d6;
   width: 28%;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 40px;
 }
 .child-1 {
   height: 500px;
