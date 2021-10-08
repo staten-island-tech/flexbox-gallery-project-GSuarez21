@@ -20,24 +20,22 @@ body,
   padding: 5px;
 }
 .container {
-  justify-content: space-evenly;
-  flex-flow: wrap;
+  border: 1px solid black;
+  padding: 5%;
 }
-.parent {
-  text-align: center;
-  font-size: 30px;
+.about-row {
   display: flex;
-
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 5%;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
+
 .child {
   box-shadow: 5px 5px 5px 0px #8a86d6;
-  width: 28%;
+  text-align: center;
+  width: 35rem;
+  height: 35rem;
   border: 1px solid black;
   border-radius: 40px;
-}
-.child-1 {
-  height: 500px;
+  font-size: 3rem;
+  margin-bottom: 3%;
 }
