@@ -23,7 +23,7 @@ body,
 .container {
   padding: 5%;
 }
-.about-row {
+.parent {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
