@@ -37,11 +37,20 @@ body,
   font-size: 3rem;
   margin: 5%;
   justify-content: center;
+  outline-offset: 1rem;
 }
 
 #sus {
   width: 25rem;
   border-radius: 5rem;
 }
-@media (max-width: 768) {
+.child:hover {
+  -webkit-transition-duration: 0.3s;
+}
+
+.child:hover,
+.child:focus,
+.child:active {
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
 }
