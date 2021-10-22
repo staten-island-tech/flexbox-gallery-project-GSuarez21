@@ -19,6 +19,8 @@ body,
   border-radius: 5px;
   padding: 5px;
   border: 1px solid black;
+  animation-name: example;
+  animation-duration: 1s;
 }
 .container {
   padding: 5%;
@@ -38,19 +40,57 @@ body,
   margin: 5%;
   justify-content: center;
   outline-offset: 1rem;
+
+  padding: 2%;
 }
 
-#sus {
-  width: 25rem;
+.sus {
+  width: 100%;
   border-radius: 5rem;
 }
+
 .child:hover {
   -webkit-transition-duration: 0.3s;
+  -webkit-transform: scale(0.9);
 }
 
-.child:hover,
-.child:focus,
-.child:active {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
+.child-1:hover {
+  opacity: 0%;
+}
+.child-2:hover {
+  transform: rotateY(360deg);
+  transition: 1s;
+}
+.child-3:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+  transition: 0.5s;
+  -webkit-transform: scale(1.1);
+}
+.child-4:hover {
+  transform: rotateX(180deg);
+}
+.child-5:hover {
+  transform: rotate(360deg);
+}
+
+@keyframes example {
+  0% {
+    background-image: url(https://th.bing.com/th/id/R.b5b25a5ee9427218acab4e1961320444?rik=qk2125p3P%2bUXdg&pid=ImgRaw&r=0);
+  }
+  90% {
+    background-image: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sus {
+    width: 75%;
+  }
+}
+@media (max-width: 768px) {
+  .sus {
+    width: 50%;
+  }
 }
